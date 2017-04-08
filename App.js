@@ -1,42 +1,49 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, AppRegistry } from 'react-native';
 import { Button, SideMenu } from 'react-native-elements'
 
-export default class App extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = { isOpen: false }
-  }
+import { StackNavigator } from 'react-navigation'
 
-  handle = () => {
-    this.setState({isOpen: !this.state.isOpen})
-  }
+
+class HomeScreen extends React.Component {
+  static navigationOptions = { title: 'Welcome' }
 
   render() {
-    return (
-      <SideMenu
-        isOpen={this.state.isOpen}
-        menu={(<Text>Teste</Text>)}
-      >
-        <View style={styles.container}>        
-          <Button
-            large
-            onPress={this.handle}
-            icon={{name: 'squirrel', type: 'octicon', buttonStyle: styles.someButtonStyle }}
-            title='OCTICON' />
+    const { navigate } = this.props.navigation
 
-          <Text>{this.state.isOpen ? 'Ola': 'Tchau'}</Text>
-        </View>
-      </SideMenu>
-    );
+    return (
+      <View>
+        <Text>Hello, Navigation!</Text>
+        <Button 
+          onPress={() => navigate('Outro', { user: 'test' })}
+          title="Outro"
+        />
+      </View>
+    )
+  }
+
+}
+
+class OutroScreen extends React.Component {
+  static navigationOptions = { title: 'Outro!'}
+
+  render() {
+    const { params } = this.props.navigation.state
+    
+    return (
+      <View> 
+        <Text>Welcom {params.user}</Text>
+      </View>
+    )
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+const App = StackNavigator({
+  Home: { screen: HomeScreen },
+  Outro: { screen: OutroScreen }
+})
+
+
+
+export default App
