@@ -2,9 +2,10 @@ import React from 'react';
 import { StyleSheet, Text, View, AppRegistry, WebView, AsyncStorage } from 'react-native';
 import { Button, SideMenu } from 'react-native-elements'
 import { StackNavigator } from 'react-navigation'
+import axios from 'axios'
 
-const CLIENT_ID = //github client id goes here
-
+const GITHUB_CLIENT_ID = '' //github client id goes here
+const GITHUB_SECRET = '' //github secret id here
 
 class HomeScreen extends React.Component {
   static navigationOptions = { title: 'Welcome' }
@@ -48,40 +49,51 @@ class Github extends React.Component {
   constructor(props){
     super(props)
 
-    this.state = { logged: false}
-
+    this.state = { isStored: false}
   }
 
-  onNavigationStateChange = async (navState, callback) => {
-    let url = new window.URL(navState.url)
+  onLoad = async (navState, callback) => {
+    let url = new window.URL(navState.nativeEvent.url)
     let githubCode = url.searchParams.get('code')
-    let isStored = await AsyncStorage.getItem('githubCode') === true
-    
-    if (githubCode && !isStored) {
-      debugger
-      await AsyncStorage.setItem('githubCode', githubCode)
-      callback()
-    }
+
+    if(!githubCode) return
+
+    const githubApiJson = await axios({ 
+      method: 'post', 
+      url: 'https://github.com/login/oauth/access_token',
+      data: {
+        client_id: GITHUB_CLIENT_ID,
+        client_secret: GITHUB_SECRET,
+        code: githubCode,
+        redirect_url: 'http://127.0.0.1'
+      }
+    })
+
+    await AsyncStorage.setItem('GITHUB_DATA', githubApiJson.data)
+    return AsyncStorage.getItem('GITHUB_DATA')
     
   }
 
   render()   {
     const { navigate } = this.props.navigation
-    
+
     return (
       <WebView
-        source={{uri:`https://github.com/login/oauth/authorize?cliente_id=${CLIENTE_ID}`}}
+        source={{uri:`https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}`}}
         javaScriptEnabled={true}
         domStorageEnabled={true}
         startInLoadingState={true}
         scalesPageToFit={true}
-        onNavigationStateChange={navState => this.onNavigationStateChange(navState, () => navigate('Home'))}
+        onLoad={
+          async navState => {
+            if(await this.onLoad(navState)) navigate('Home')
+          }
+        }
       />
     )
   }
 
 }
-
 
 const App = StackNavigator({
   Home: { screen: HomeScreen },
