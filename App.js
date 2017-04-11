@@ -1,13 +1,33 @@
 import React from 'react';
 import { StyleSheet, Text, View, AppRegistry, WebView, AsyncStorage } from 'react-native';
 import { Button, SideMenu } from 'react-native-elements'
-import { StackNavigator } from 'react-navigation'
+import { StackNavigator, TabNavigator } from 'react-navigation'
 import axios from 'axios'
 
 const GITHUB_CLIENT_ID = '' //github client id goes here
 const GITHUB_SECRET = '' //github secret id here
 
-class HomeScreen extends React.Component {
+class Bootstrap extends React.Component {
+
+  render () {
+    const { navigate } = this.props.navigation
+    
+    AsyncStorage.getItem('GITHUB_DATA', (data) => {
+      if(data) 
+        navigate('Main')
+      else
+        navigate('Login')
+    })
+
+    return (
+      <Text>Loading </Text>
+    )
+
+  }
+
+}
+
+class LoginScreen extends React.Component {
   static navigationOptions = { title: 'Welcome' }
 
   render() {
@@ -15,14 +35,10 @@ class HomeScreen extends React.Component {
 
     return (
       <View>
-        <Text>Hello, Navigation!</Text>
-        <Button 
-          onPress={() => navigate('Outro', { user: 'test' })}
-          title="Outro"
-        />
+        <Text>Sign in with Github!</Text>
         <Button 
           onPress={() => navigate('Github')}
-          title="Login Github"
+          title="login"
         />        
       </View>
     )
@@ -44,12 +60,63 @@ class OutroScreen extends React.Component {
   }
 }
 
+class RepositoriesScreen extends React.Component {
+
+  render() {
+
+    return (
+      <View>
+        <Text>Repositories Screen</Text>
+      </View>
+
+    )
+  }
+}
+
+class FeedScreen extends React.Component {
+  static navigationOptions = {
+    tabBar: {
+      label: 'Feed'
+      // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    },
+  }
+
+  render() {
+
+    return (
+      <View>
+        <Text>Feed</Text>
+      </View>
+    )
+
+  }
+}
+
+class ProfileScreen extends React.Component {
+  static navigationOptions = {
+    tabBar: {
+      label: 'Profile'
+      // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    },
+  }
+
+  render() {
+
+    return (
+      <View>
+        <Text>Profile</Text>
+      </View>
+    )
+
+  }
+}
+
 class Github extends React.Component {
   
-  constructor(props){
+  constructor(props) {
     super(props)
 
-    this.state = { isStored: false}
+    this.state = { hasToken: false }
   }
 
   onLoad = async (navState, callback) => {
@@ -70,8 +137,7 @@ class Github extends React.Component {
     })
 
     await AsyncStorage.setItem('GITHUB_DATA', githubApiJson.data)
-    return AsyncStorage.getItem('GITHUB_DATA')
-    
+    this.setState({ hasToken: true })
   }
 
   render()   {
@@ -86,7 +152,9 @@ class Github extends React.Component {
         scalesPageToFit={true}
         onLoad={
           async navState => {
-            if(await this.onLoad(navState)) navigate('Home')
+            // await this.onLoad(navState)
+            // if(this.state.hasToken) navigate('Main')
+            navigate('Main')
           }
         }
       />
@@ -95,13 +163,17 @@ class Github extends React.Component {
 
 }
 
-const App = StackNavigator({
-  Home: { screen: HomeScreen },
-  Outro: { screen: OutroScreen },
-  Github: { screen: Github}
+const Main = TabNavigator({
+  Feed: { screen: FeedScreen },
+  Profile: { screen: ProfileScreen }
 })
 
-
+const App = StackNavigator({
+  Bootstrap: { screen: Bootstrap },
+  Login: { screen: LoginScreen },
+  Main: { screen: Main },
+  Github: { screen: Github }
+})
 
 export default App
 
