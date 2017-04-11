@@ -4,28 +4,31 @@ import { Button, SideMenu } from 'react-native-elements'
 import { StackNavigator, TabNavigator } from 'react-navigation'
 import axios from 'axios'
 
+//redux
+import { createStore, applyMiddleware, combineReducers } from 'redux'
+import { Provider } from 'react-redux'
+import { thunk } from 'redux-thunk'
+
+const createStoreWithMiddleware = applyMiddleware(thunk)(createStore)
+const reducer = combineReducers(reducers)
+const store = createStoreWithMiddleware(reducer)
+
 const GITHUB_CLIENT_ID = '' //github client id goes here
 const GITHUB_SECRET = '' //github secret id here
 
-class Bootstrap extends React.Component {
+/*class Root extends React.Component {
 
   render () {
-    const { navigate } = this.props.navigation
-    
-    AsyncStorage.getItem('GITHUB_DATA', (data) => {
-      if(data) 
-        navigate('Main')
-      else
-        navigate('Login')
-    })
 
     return (
-      <Text>Loading </Text>
+      <Provider store={store}>
+        <Text />       
+      <Provider />
     )
 
   }
 
-}
+}*/
 
 class LoginScreen extends React.Component {
   static navigationOptions = { title: 'Welcome' }
