@@ -1,42 +1,14 @@
+//react
 import React from 'react'
-import { StyleSheet, Text, View, AppRegistry, WebView, AsyncStorage } from 'react-native'
-import { Button, SideMenu } from 'react-native-elements'
-import { StackNavigator, TabNavigator, addNavigationHelpers } from 'react-navigation'
-import axios from 'axios'
+import { addNavigationHelpers } from 'react-navigation'
 
 //redux
 import { createStore, applyMiddleware, combineReducers } from 'redux'
 import { Provider, connect } from 'react-redux'
 import thunk from 'redux-thunk'
 
-//constants
-const GITHUB_CLIENT_ID = '' //github client id goes here
-const GITHUB_SECRET = '' //github secret id here
-
-// create a component
-class Main extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Main</Text>
-      </View>
-    )
-  }
-}
-
-// define your styles
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#2c3e50',
-  }
-})
-
-const AppNavigator = StackNavigator({
-  Home: { screen: Main }
-})
+//Containers
+import AppNavigator from './components/AppNavigator'
 
 const navReducer = (state, action) => {
   const newState = AppNavigator.router.getStateForAction(action, state)
@@ -74,7 +46,7 @@ class App extends React.Component {
       <Provider store={store}>
         <AppWithNavigationState />
       </Provider>
-    );
+    )
   }
 }
 
