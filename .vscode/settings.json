@@ -1,0 +1,13 @@
+{
+  "react-native": {
+    "packager" : {
+      "port": 19002
+    }
+  },
+  "react-native-tools": {
+    "showInternalLogs": true,
+    "logLevel": "Trace"
+  }  
+}
+
+
