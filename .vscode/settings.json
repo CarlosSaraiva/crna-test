@@ -1,7 +1,7 @@
 {
   "react-native": {
     "packager" : {
-      "port": 19002
+      "port": 19001
     }
   },
   "react-native-tools": {

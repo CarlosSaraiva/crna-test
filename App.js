@@ -16,8 +16,11 @@ const navReducer = (state, action) => {
 }
 
 //reducers
+import loginReducer from './components/Login/store'
+
 const reducers = {
-  nav: navReducer
+  nav: navReducer,
+  login: loginReducer
 }
 
 //store config
