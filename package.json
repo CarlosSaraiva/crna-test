@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "eslint": "^3.14.0",    
+    "eslint": "^3.14.0",
     "eslint-plugin-react": "^6.10.3",
     "eslint-config-airbnb": "9.0.1",
     "eslint-plugin-import": "1.9.2",
@@ -32,6 +32,7 @@
     "react-native-elements": "^0.10.3",
     "react-navigation": "^1.0.0-beta.7",
     "redux-observable": "^0.14.1",
+    "redux-persist": "^4.6.0",
     "redux-thunk": "^2.2.0",
     "rxjs": "^5.2.0"
   }

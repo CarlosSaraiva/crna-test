@@ -2,17 +2,21 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Button, Text, View, StyleSheet, Linking } from 'react-native'
 
+@connect(state => {
+  return {
+    code: state.github.code,
+    token: state.github.code
+  }
+})
+
 class Login extends Component {  
+  constructor(props) {
+    super(props)
+  }
 
   componentDidMount() {
-    Linking.addEventListener('url', event => this.handleExternalRequest(event))
   }
 
-  handleExternalRequest(event) {
-    console.log('external request:', event)
-    debugger
-  }
-    
   render() {
     const { navigate } = this.props.navigation
 

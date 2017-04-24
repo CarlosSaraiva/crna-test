@@ -1,11 +1,13 @@
 //react
 import React from 'react'
 import { addNavigationHelpers } from 'react-navigation'
+import {AsyncStorage} from 'react-native'
 
 //redux
-import { createStore, applyMiddleware, combineReducers } from 'redux'
+import { createStore, applyMiddleware, combineReducers, compose } from 'redux'
 import { Provider, connect } from 'react-redux'
 import thunk from 'redux-thunk'
+import { persistStore, autoRehydrate } from 'redux-persist'
 
 //Containers
 import AppNavigator from './components/AppNavigator'
@@ -17,16 +19,25 @@ const navReducer = (state, action) => {
 
 //reducers
 import loginReducer from './components/Login/store'
+import githubReducer from './components/Github/store'
 
-const reducers = {
+const reducers = combineReducers({
   nav: navReducer,
-  login: loginReducer
-}
-
+  login: loginReducer,
+  github: githubReducer
+})
 //store config
-const createStoreWithMiddleware = applyMiddleware(thunk)(createStore)
-const reducer = combineReducers(reducers)
-const store = createStoreWithMiddleware(reducer)
+// const createStoreWithMiddleware = applyMiddleware(thunk)
+
+// const store = createStoreWithMiddleware(reducer)
+
+const store = createStore(reducers, {}, compose(
+  autoRehydrate(),
+  applyMiddleware(thunk)
+))
+
+
+persistStore(store, {storage: AsyncStorage}, () => console.log('State restored!'))
 
 @connect(state => ({
   nav: state.nav,

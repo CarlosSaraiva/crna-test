@@ -1,37 +1,39 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import loginStore from '../Login/store'
+import { updateCode, updateToken } from './store'
 import { Button, Text, View, StyleSheet, Linking, WebView } from 'react-native'
 
-const CLIENT_ID = ''
-const REDIRECT_URI = ''
-
+const CLIENT_ID = '3958f13174e81fd43e0a'
+const REDIRECT_URI = 'exp://5q-b8q.carlossaraiva.crna-test.exp.direct:80'
 
 class Github extends Component {
+
   constructor(props) {
     super(props)
-    
     this.handleGithubRedirect = ::this.handleGithubRedirect
   }
 
-  componentDidMount() {
-  }
+  handleGithubRedirect(event) {
+    if (!event.nativeEvent) return
+    
+    let url = new URL(event.nativeEvent.url)
+    
+    if(url.searchParams.get('code')) {
+      this.props.updateCode(url.searchParams.get('code'))
+    }
 
-  handleGithubRedirect (event) {
-    console.log('onLoad', event)
   }
  
   render() {
     return (
       <WebView
-        source={{uri: `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}`}}
+        source={{uri: `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&redirect`}}
         style={{marginTop: 20}}
-        onLoad={this.handleGithubRedirect}
+        onLoadStart={e => this.handleGithubRedirect(e)}
         automaticallyAdjustContentInsets={false}
         javaScriptEnabled={true}
         domStorageEnabled={true}
         decelerationRate="normal"
-        onShouldStartLoadWithRequest={false}
         startInLoadingState={true}
         scalesPageToFit={true}        
       />
@@ -46,21 +48,11 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    updateLogin: (loginInfo) => {
-      dispatch(loginStore.updateLogin(loginInfo))
+    updateCode: code => {
+      dispatch(updateCode(code))
     }
 
   }
 }
 
-const mergeProps = (stateProps, dispatchProps, ownProps) => {
-  return {
-    ...ownProps,
-    redux: {
-      state: stateProps,
-      actions: dispatchProps
-    }
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(Github)
+export default connect(mapStateToProps, mapDispatchToProps)(Github)
