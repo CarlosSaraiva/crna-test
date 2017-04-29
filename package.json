@@ -3,22 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "babel-eslint": "^6.1.0",
     "eslint": "^3.14.0",
-    "eslint-plugin-react": "^6.10.3",
     "eslint-config-airbnb": "9.0.1",
     "eslint-plugin-import": "1.9.2",
     "eslint-plugin-jsx-a11y": "1.5.3",
-    "babel-eslint": "^6.1.0",
+    "eslint-plugin-react": "^6.10.3",
     "jest-expo": "^0.3.0",
-    "react-native-scripts": "0.0.27",
     "react-test-renderer": "~15.4.1"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
     "test": "node node_modules/jest/bin/jest.js --watch"
   },
   "jest": {
@@ -26,11 +23,14 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
-    "expo": "^15.1.0",
+    "babel-preset-expo": "^1.0.1",
     "react": "~15.4.0",
     "react-native": "0.42.3",
     "react-native-elements": "^0.10.3",
     "react-navigation": "^1.0.0-beta.7",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
     "redux-observable": "^0.14.1",
     "redux-persist": "^4.6.0",
     "redux-thunk": "^2.2.0",

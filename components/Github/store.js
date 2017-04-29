@@ -1,19 +1,16 @@
+import githubApi from '../libs/github-api.js'
+
 //Actions
-const UPDATE_CODE = 'login/UPDATE_CODE'
-const UPDATE_TOKEN = 'login/UPDATE_TOKEN'
+const UPDATE_TOKEN = 'github/UPDATE_TOKEN'
 
 const initial = {
-  code: '',
   token: ''
 }
 
-
 //Reducer
-export default function reducer(state = initial, action) {
+const reducer = (state = initial, action) => {
   
   switch (action.type) {
-    case UPDATE_CODE:
-      return { ...state, code: action.code }
 
     case UPDATE_TOKEN:
       return { ...action.state, token: action.token }
@@ -25,16 +22,18 @@ export default function reducer(state = initial, action) {
 }
 
 //Action creator
-export function updateCode(code) {
-  return { 
-    type: UPDATE_CODE,
-    code
-  }
-}
-
-export function updateToken(token) {
+const updateToken = token => {
   return { 
     type: UPDATE_TOKEN,
     token
   }
 }
+
+const action = {
+  updateToken
+}
+
+export { action , reducer }
+
+
+

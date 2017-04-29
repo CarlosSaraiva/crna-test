@@ -2,7 +2,7 @@
 const UPDATE = 'login/UPDATE'
 
 //Reducer
-export default function reducer(state = {}, action = {}) {
+const reducer = (state = {}, action = {}) => {
   
   switch (action.type) {
     case UPDATE:
@@ -15,9 +15,15 @@ export default function reducer(state = {}, action = {}) {
 }
 
 //Action creator
-export function updateLogin(data) {
-  return { 
-    type: UPDATE,
-    state: data
+const action = {
+
+  updateLogin: data => {
+    return { 
+      type: UPDATE,
+      state: data
+    }
   }
+
 }
+
+export { action, reducer }
