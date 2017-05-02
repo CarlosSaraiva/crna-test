@@ -1,5 +1,3 @@
-import githubApi from '../libs/github-api.js'
-
 //Actions
 const UPDATE_TOKEN = 'github/UPDATE_TOKEN'
 
@@ -11,7 +9,6 @@ const initial = {
 const reducer = (state = initial, action) => {
   
   switch (action.type) {
-
     case UPDATE_TOKEN:
       return { ...action.state, token: action.token }
 

@@ -4,17 +4,11 @@ import { Login } from './login'
 import  { Github } from './github'
 
 const AppNavigator = StackNavigator({
-  login: { 
-    screen: Login,
-    navigationOptions: (teste) => {
-      return {
-        title: 'teste',
-        header: null
-      }
-    }
-  },
+  login: { screen: Login },
   github: { screen: Github },
   home: { screen: Main }
+},{
+  initialRouteName: 'login'
 })
 
 export default AppNavigator

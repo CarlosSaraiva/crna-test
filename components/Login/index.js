@@ -4,8 +4,7 @@ import Login from './login'
 
 const mapStateToProps = state => {
   return {
-    code: state.github.code,
-    token: state.github.code
+    token: state.github.token
   }
 }
 

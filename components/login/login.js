@@ -1,7 +1,18 @@
 import React, { Component } from 'react'
-import { Button, Text, View, StyleSheet, Linking } from 'react-native'
+import PropTypes from 'prop-types'
+import { Button, Text, View } from 'react-native'
 
-class Login extends Component {    
+class Login extends Component {
+
+  static navigationOptions = () => {
+    return {
+      title: 'teste',
+      header: null
+    }
+  }  
+
+  componentWillMount() {
+  }
 
   render() {
     const { navigate } = this.props.navigation
@@ -13,6 +24,11 @@ class Login extends Component {
       </View>
     )
   }
+}
+
+Login.propTypes = {
+  navigate: PropTypes.func,
+  navigation: PropTypes.object
 }
 
 export default Login
