@@ -4,6 +4,10 @@
     "browser": true,
     "es6": true
   },
+  "globals": {
+      "module": true,
+      "require": true
+  },  
   "ecmaFeatures": {
     "jsx": true
   },  
