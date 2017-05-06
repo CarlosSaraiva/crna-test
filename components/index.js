@@ -4,19 +4,19 @@ import { Provider } from 'react-redux'
 
 //navigators
 import { AppNavigator } from './app-navigator.js'
-import StoreNavigator from './config/store-navigator'
+import App from './app-wrapper'
 
 //store
 import store from './config/store'
 
-class App extends React.Component {
+class Root extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <StoreNavigator navigator={AppNavigator} />
+        <App navigator={AppNavigator} />        
       </Provider>
     )
   }
 }
 
-export default App
+export default Root

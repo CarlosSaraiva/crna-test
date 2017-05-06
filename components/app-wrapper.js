@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
+import React, { Component }     from 'react'
+import PropTypes                from 'prop-types'
+import { connect }              from 'react-redux'
 import { addNavigationHelpers } from 'react-navigation'
 
-class StoreNavigator extends Component {
+class App extends Component {
   render() {
     const Navigator = this.props.navigator
     
@@ -16,14 +16,15 @@ class StoreNavigator extends Component {
   }
 }
 
-StoreNavigator.propTypes = {
+App.propTypes = {
   dispatch: PropTypes.func,
   nav: PropTypes.object,
-  navigator: PropTypes.func
+  navigator: PropTypes.func,
 }
 
 const mapStateToProps = state => ({
-  nav: state.nav
+  nav: state.nav,
+  token: state.github.token
 })
 
-export default connect(mapStateToProps)(StoreNavigator)
+export default connect(mapStateToProps)(App)
