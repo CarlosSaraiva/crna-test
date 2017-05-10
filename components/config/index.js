@@ -18,10 +18,10 @@ import createSagaMiddleware from 'redux-saga'
 import reducers from './root-reducer'
 
 //sagas
-import appSaga from '../app-saga'
+import { saga as appSaga } from '../app'
 
 //sagas
-const saga = createSagaMiddleware
+const saga = createSagaMiddleware()
 
 const store = createStore(reducers, {}, compose(
   autoRehydrate(),

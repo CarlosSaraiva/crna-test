@@ -1,5 +1,5 @@
 import { put, takeLatest } from 'redux-saga/effects'
-import { action } from './app-store'
+import { action } from './store'
 
 // worker Saga: will be fired on USER_FETCH_REQUESTED actions
 function* rehydrated() {    

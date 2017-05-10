@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, View, Text } from 'react-native'
+import { View, Text } from 'react-native'
 
 class Main extends React.Component {
   constructor(props) {
@@ -8,7 +8,7 @@ class Main extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View >
         <Text>Main</Text>
       </View>
     )
@@ -16,13 +16,5 @@ class Main extends React.Component {
 }
 
 // define your styles
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#2c3e50',
-  }
-})
 
 export default Main

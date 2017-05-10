@@ -3,17 +3,17 @@ import React from 'react'
 import { Provider } from 'react-redux'
 
 //navigators
-import { AppNavigator } from './app-navigator.js'
-import App from './app-wrapper'
+import RootNavigator from './root-navigator.js'
+import { AppContainer } from './app'
 
 //store
-import store from './config/store'
+import store from './config'
 
 class Root extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <App navigator={AppNavigator} />        
+        <AppContainer navigator={RootNavigator} />        
       </Provider>
     )
   }

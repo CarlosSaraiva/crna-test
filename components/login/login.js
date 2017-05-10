@@ -11,9 +11,6 @@ class Login extends Component {
     }
   }  
 
-  componentWillMount() {
-  }
-
   render() {
     const { navigate } = this.props.navigation
 

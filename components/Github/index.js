@@ -14,6 +14,6 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const connectedGithub = connect(mapStateToProps, mapDispatchToProps)(Github)
+const GithubContainer = connect(mapStateToProps, mapDispatchToProps)(Github)
 
-export { action as githubAction, reducer as githubReducer, connectedGithub as Github }
+export { action as action, reducer, GithubContainer }

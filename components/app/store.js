@@ -10,7 +10,7 @@ const reducer = (state = inital, action) => {
   
   switch (action.type) {
     case REHYDRATED:
-      return {...action.rehydrated}
+      return {...state, rehydrated: action.rehydrated}
 
     default: 
       return state

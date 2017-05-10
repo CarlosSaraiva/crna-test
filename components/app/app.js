@@ -1,6 +1,5 @@
 import React, { Component }     from 'react'
 import PropTypes                from 'prop-types'
-import { connect }              from 'react-redux'
 import { addNavigationHelpers } from 'react-navigation'
 
 class App extends Component {
@@ -22,9 +21,4 @@ App.propTypes = {
   navigator: PropTypes.func,
 }
 
-const mapStateToProps = state => ({
-  nav: state.nav,
-  token: state.github.token
-})
-
-export default connect(mapStateToProps)(App)
+export default App

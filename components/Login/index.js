@@ -8,6 +8,6 @@ const mapStateToProps = state => {
   }
 }
 
-const connectedLogin = connect(mapStateToProps)(Login)
+const LoginContainer = connect(mapStateToProps)(Login)
 
-export { action, reducer as loginReducer, connectedLogin as Login }
+export { action, reducer, LoginContainer }
