@@ -6,14 +6,17 @@ const mapStateToProps = (state) => {
   return { ...state }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     updateToken: code => {
       dispatch(action.updateToken(code))
+    },
+    getToken: () => {      
+      return ownProps.github.token
     }
   }
 }
 
 const GithubContainer = connect(mapStateToProps, mapDispatchToProps)(Github)
 
-export { action as action, reducer, GithubContainer }
+export { action, reducer, GithubContainer }

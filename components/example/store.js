@@ -1,13 +1,12 @@
 //Actions
-const TEST = 'login/TEST'
+const ACTION_EXAMPLE = 'example/ACTION_EXAMPLE'
 
 //Reducer
-export default function reducer(state = {}, action = {}) {
+const reducer = (state = {}, action = {}) => {
   
   switch (action.type) {
-
-    case TEST: 
-      return { ...state }
+    case ACTION_EXAMPLE:
+      return {...action.state}
 
     default: 
       return state
@@ -16,6 +15,15 @@ export default function reducer(state = {}, action = {}) {
 }
 
 //Action creator
-export function login() {
-  return { type: TEST }
+const action = {
+
+  actionCreatorExample(data) {
+    return { 
+      type: ACTION_EXAMPLE,
+      state: data
+    }
+  }
+
 }
+
+export { action, reducer }

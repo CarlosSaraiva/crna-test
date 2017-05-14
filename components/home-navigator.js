@@ -1,12 +1,10 @@
-import { DrawerNavigator }  from 'react-navigation'
-import Main from './main'
-import Drawer from './drawer'
+import { StackNavigator } from 'react-navigation'
+import Main              from './feed'
 
-const HomeNavigator = DrawerNavigator({
-  main: { screen:  Main},
-  drawer: { screen: Drawer }
+const HomeNavigator = StackNavigator({
+  Feed: { screen: Main }  
 },{
-  initialRouteName: 'main'
+  initialRouteName: 'Feed'
 })
 
 export default HomeNavigator

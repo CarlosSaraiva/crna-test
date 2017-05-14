@@ -21,8 +21,12 @@ function requestToken(code) {
   .then(response => response.data)
 }
 
+function getUserProfile() {
+  return instance.get('/user')
+}
+
 function updateToken(oauthToken) {
   instance.defaults.headers.common['Authorization'] = `token ${oauthToken}`
 }
 
-export default { requestToken, updateToken, AUTH_URL }
+export { requestToken, updateToken, AUTH_URL, getUserProfile }

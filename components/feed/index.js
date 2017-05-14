@@ -1,15 +1,22 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-class Main extends React.Component {
+class Feed extends React.Component {
   constructor(props) {
     super(props)
   }
 
+  static navigationOptions = () => {
+    return {
+      title: 'home',
+      header: null
+    }
+  }    
+
   render() {
     return (
       <View >
-        <Text>Main</Text>
+        <Text>Home</Text>
       </View>
     )
   }
@@ -17,4 +24,4 @@ class Main extends React.Component {
 
 // define your styles
 
-export default Main
+export { Feed }

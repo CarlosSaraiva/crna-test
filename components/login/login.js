@@ -3,21 +3,33 @@ import PropTypes from 'prop-types'
 import { Button, Text, View } from 'react-native'
 
 class Login extends Component {
-
+  
   static navigationOptions = () => {
     return {
-      title: 'teste',
+      title: 'login',
       header: null
     }
   }  
 
   render() {
-    const { navigate } = this.props.navigation
+    const { navigation: { navigate }, token, isRehydrated } = this.props
+    
+    const loading = () => (
+      <Text>loading...</Text>
+    )
 
-    return (
-      <View >
+    const loginForm = () => (
+      <View>
         <Text>App login</Text>
-        <Button title="Login with Github" onPress={() => navigate('github')}/>
+        <Button title="Login with Github" onPress={() => navigate('Github')}/>
+      </View>
+    )
+    
+    return (
+      <View>
+      {
+        isRehydrated && !token ? loginForm() : loading()
+      }
       </View>
     )
   }
@@ -25,7 +37,9 @@ class Login extends Component {
 
 Login.propTypes = {
   navigate: PropTypes.func,
-  navigation: PropTypes.object
+  navigation: PropTypes.object,
+  isRehydrated: PropTypes.bool,
+  token: PropTypes.string
 }
 
 export default Login

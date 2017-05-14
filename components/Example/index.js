@@ -1,31 +1,14 @@
-import React, { Component } from 'react'
-import { Button, Text, View, StyleSheet } from 'react-native'
-import { Constants, WebBrowser } from 'expo'
+import { connect }         from 'react-redux'
+import { action, reducer } from './store'
+import Example             from './example'
 
-class Example extends Component {
-  
-  render() {
-    return (
-      <View >
-        <Text style={styles.title}>Example: Github login</Text>
-        <Button title="Login with Github" />
-      </View>
-    )
+const mapStateToProps = state => {
+  return {
+    token: state.github.token,
+    isRehydrated: state.app.rehydrated
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    textAlign: 'center',
-    marginTop: 40,
-  },
-})
+const ExampleContainer = connect(mapStateToProps)(Example)
 
-export default Example
+export { action, reducer, ExampleContainer }

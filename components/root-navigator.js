@@ -1,17 +1,15 @@
-import { StackNavigator } from 'react-navigation'
-import { LoginContainer }          from './login'
-import  { GithubContainer }        from './github'
-import Splash             from './splash'
-import HomeNavigator  from './home-navigator'
+import { DrawerNavigator }   from 'react-navigation'
+import { LoginContainer }   from './login'
+import  { GithubContainer } from './github'
+import HomeNavigator        from './home-navigator'
+import { SideBarContainer }   from './side-bar'
 
-const RootNavigator = StackNavigator({
-  splash: { screen: Splash },
-  login: { screen: LoginContainer },
-  github: { screen: GithubContainer },
-  home: { screen: HomeNavigator }
+const RootNavigator = DrawerNavigator({
+  Login: { screen: LoginContainer },
+  Github: { screen: GithubContainer },
+  Home: { screen: HomeNavigator }
 },{
-  initialRouteName: 'splash'
+  contentComponent: SideBarContainer
 })
-
 
 export default RootNavigator

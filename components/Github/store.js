@@ -1,8 +1,11 @@
+import { createSelector } from 'reselect'
+
 //Actions
 const UPDATE_TOKEN = 'github/UPDATE_TOKEN'
 
 const initial = {
-  token: ''
+  token: null,
+  profile: {}
 }
 
 //Reducer
@@ -26,9 +29,14 @@ const updateToken = token => {
   }
 }
 
-const action = {
-  updateToken
-}
+const getToken = () => {
+  return createSelector(
+    [state => state.token],
+    token => token
+  )
+} 
+
+const action = { updateToken, getToken }
 
 export { action , reducer }
 

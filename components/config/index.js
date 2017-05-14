@@ -1,16 +1,9 @@
 import { AsyncStorage } from 'react-native'
 
 //redux
-import { 
-  createStore, 
-  applyMiddleware, 
-  compose 
-}                           from 'redux'
-import thunk                from 'redux-thunk'
-import { 
-  persistStore, 
-  autoRehydrate 
-}                           from 'redux-persist'
+import { createStore, applyMiddleware, compose }  from 'redux'
+import thunk from 'redux-thunk'
+import { persistStore, autoRehydrate } from 'redux-persist'
 import logger               from 'redux-logger'
 import createSagaMiddleware from 'redux-saga'
 

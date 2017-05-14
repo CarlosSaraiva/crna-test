@@ -4,7 +4,8 @@ import Login from './login'
 
 const mapStateToProps = state => {
   return {
-    token: state.github.token
+    token: state.github.token,
+    isRehydrated: state.app.rehydrated
   }
 }
 
