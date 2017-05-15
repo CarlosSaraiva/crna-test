@@ -26,7 +26,6 @@ MERGED from [com.facebook.react:react-native:0.42.3] C:\Users\Carlos\Documents\R
 		ADDED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:7:22-75
 uses-sdk
 ADDED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:9:5-11:41
-MERGED from [crnatest:react-native-vector-icons:unspecified] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\crnatest\react-native-vector-icons\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.42.3] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.42.3\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\AndroidManifest.xml:20:5-43

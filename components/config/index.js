@@ -13,7 +13,7 @@ import createSagaMiddleware            from 'redux-saga'
 
 //logger
 const logger = createLogger({
-  collapsed: false,
+  collapsed: true,
   duration: true
 })
 
