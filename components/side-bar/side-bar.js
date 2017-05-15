@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes            from 'prop-types'
 import { View, Text, Image }       from 'react-native'
-import { Avatar }           from 'react-native-elements'
 
 class SideBar extends Component {
 

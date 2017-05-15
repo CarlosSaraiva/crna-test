@@ -26,6 +26,7 @@ import { saga as appSaga } from '../app'
 //sagas
 const saga = createSagaMiddleware()
 
+//store
 const store = createStore(reducers, {}, compose(
   autoRehydrate(),
   applyMiddleware(thunk, logger, saga)

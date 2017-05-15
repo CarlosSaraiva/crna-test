@@ -19,7 +19,8 @@
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
+    "test": "node node_modules/jest/bin/jest.js --watch",
+    "postinstall": "rndebugger-open"
   },
   "jest": {
     "preset": "jest-expo"
@@ -29,8 +30,6 @@
     "prop-types": "^15.5.8",
     "react": "~15.4.0",
     "react-native": "0.42.3",
-    "react-native-elements": "^0.10.3",
-    "react-native-vector-icons": "^4.0.1",
     "react-navigation": "https://github.com/react-community/react-navigation",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",

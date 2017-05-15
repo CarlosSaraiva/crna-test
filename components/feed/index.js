@@ -16,7 +16,7 @@ class Feed extends React.Component {
   render() {
     return (
       <View >
-        <Text>Home</Text>
+        <Text>Feed</Text>
       </View>
     )
   }

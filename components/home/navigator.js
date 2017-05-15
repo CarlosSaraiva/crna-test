@@ -1,8 +1,8 @@
 import { StackNavigator } from 'react-navigation'
-import Main              from './feed'
+import { Feed }              from '../feed'
 
 const HomeNavigator = StackNavigator({
-  Feed: { screen: Main }  
+  Feed: { screen: Feed }  
 },{
   initialRouteName: 'Feed'
 })
