@@ -1,11 +1,21 @@
-import { AsyncStorage } from 'react-native'
+import { AsyncStorage }                from 'react-native'
 
 //redux
-import { createStore, applyMiddleware, compose }  from 'redux'
-import thunk from 'redux-thunk'
+import { 
+  createStore, 
+  applyMiddleware, 
+  compose }                            from 'redux'
+
+import thunk                           from 'redux-thunk'
 import { persistStore, autoRehydrate } from 'redux-persist'
-import logger               from 'redux-logger'
-import createSagaMiddleware from 'redux-saga'
+import { createLogger }                from 'redux-logger'
+import createSagaMiddleware            from 'redux-saga'
+
+//logger
+const logger = createLogger({
+  collapsed: false,
+  duration: true
+})
 
 //reducers
 import reducers from './root-reducer'
