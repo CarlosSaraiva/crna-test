@@ -1,4 +1,4 @@
-import { getUserProfile } from '../lib/github-api'
+import { getUserProfile, getAuthorizations } from '../lib/github-api'
 
 //Actions
 const REQUEST = 'profile/REQUEST'

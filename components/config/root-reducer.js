@@ -3,6 +3,7 @@ import { reducer as login }   from '../login'
 import { reducer as github }  from '../github'
 import { reducer as app }     from '../app'
 import { reducer as profile } from '../profile'
+import { reducer as feed }    from '../feed/store'
 
 //Imports for react-navigation reducer
 import RootNavigator from '../root-navigator'
@@ -21,7 +22,8 @@ const reducers = combineReducers({
   login,
   github,
   app,
-  profile
+  profile,
+  feed
 })
 
 export default reducers

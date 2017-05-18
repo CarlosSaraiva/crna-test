@@ -1,8 +1,12 @@
 import axios from 'axios'
+import Rx from 'rxjs/Rx'
+
 const CLIENT_ID = '3958f13174e81fd43e0a'
 const CLIENT_SECRET = 'c2a62e2c19142d7893b6625cb0a564da71989197'
 const API_BASE_URL = 'https://api.github.com'
-const AUTH_URL = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}`
+const SCOPE = ['notifications', 'user:email', 'user:follow', 'public_repo', 'repo', 'gist', 'read:repo_hook', 'read:org' ]
+
+export const AUTH_URL = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&scope=${SCOPE.join(' ')}`
 
 let instance = axios.create({
   baseURL: API_BASE_URL,
@@ -12,7 +16,7 @@ let instance = axios.create({
   }
 })
 
-function requestToken(code) {  
+export function requestToken(code) {  
   return instance.post('https://github.com/login/oauth/access_token', {
     code:code,
     client_id: CLIENT_ID,
@@ -21,12 +25,33 @@ function requestToken(code) {
   .then(response => response.data)
 }
 
-function getUserProfile() {
+export function getUserProfile() {  
   return instance.get('/user')
 }
 
-function updateToken(oauthToken) {
+export function updateToken(oauthToken) {
   instance.defaults.headers.common['Authorization'] = `token ${oauthToken}`
 }
 
-export { requestToken, updateToken, AUTH_URL, getUserProfile }
+export function fetchNotifications() {  
+  return instance.get('/notifications')
+}
+
+export function fetchNotifications$() {
+  return Rx.Observable.fromPromise(fetchNotifications)
+}
+
+export function pollNotifications$() {
+  return Rx.Observable.interval(5000)
+    .flatMap(fetchNotifications)
+    .map(response => response.data)
+}
+
+export function getAuthorizations() {
+  return instance.get('/authorizations')    
+}
+
+export function addScope() {
+  return instance.patch('/authorizations')
+}
+

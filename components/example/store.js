@@ -2,7 +2,7 @@
 const ACTION_EXAMPLE = 'example/ACTION_EXAMPLE'
 
 //Reducer
-const reducer = (state = {}, action = {}) => {
+export const reducer = (state = {}, action = {}) => {
   
   switch (action.type) {
     case ACTION_EXAMPLE:
@@ -15,7 +15,7 @@ const reducer = (state = {}, action = {}) => {
 }
 
 //Action creator
-const action = {
+export const action = {
 
   actionCreatorExample(data) {
     return { 
@@ -25,5 +25,3 @@ const action = {
   }
 
 }
-
-export { action, reducer }

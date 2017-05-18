@@ -5,11 +5,11 @@ const UPDATE_TOKEN = 'github/UPDATE_TOKEN'
 
 const initial = {
   token: null,
-  profile: {}
+  authorizations: null
 }
 
 //Reducer
-const reducer = (state = initial, action) => {
+export const reducer = (state = initial, action) => {
   
   switch (action.type) {
     case UPDATE_TOKEN:
@@ -22,23 +22,23 @@ const reducer = (state = initial, action) => {
 }
 
 //Action creator
-const updateToken = token => {
-  return { 
-    type: UPDATE_TOKEN,
-    token
+export const action = {
+
+  updateToken(token) {
+    return { 
+      type: UPDATE_TOKEN,
+      token
+    }
+  },
+
+  getToken() {
+    return createSelector(
+      [state => state.token],
+      token => token
+    )
   }
+
 }
-
-const getToken = () => {
-  return createSelector(
-    [state => state.token],
-    token => token
-  )
-} 
-
-const action = { updateToken, getToken }
-
-export { action , reducer }
 
 
 
