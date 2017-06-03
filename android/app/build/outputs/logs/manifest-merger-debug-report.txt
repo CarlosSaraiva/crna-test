@@ -21,23 +21,23 @@ ADDED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main
 		ADDED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:7:5-77
-MERGED from [com.facebook.react:react-native:0.43.2] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.43.2\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.43.2] C:\Users\Carlos\.android\build-cache\a810159702cb7696833560ab682c3a0d1badfaf8\output\AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:7:22-75
 uses-sdk
 ADDED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:9:5-11:41
-MERGED from [com.facebook.react:react-native:0.43.2] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.43.2\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fresco:fresco:1.0.1] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.0.1] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.0.1] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.0.1] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.0.1] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.0.1] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.react:react-native:0.43.2] C:\Users\Carlos\.android\build-cache\a810159702cb7696833560ab682c3a0d1badfaf8\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Carlos\.android\build-cache\3bd43a1b3222d1f7ab05d6c8204b1cb635bd32ac\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Carlos\.android\build-cache\cd6234362f927a8a258b49e5e33659d8ee593070\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Carlos\.android\build-cache\9495ffd20ddb5b7812e2b0184ecc85089874c727\output\AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\Carlos\.android\build-cache\405352c2602df3cb2c3122638111e724e7230110\output\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.0.1] C:\Users\Carlos\.android\build-cache\72d0140c33ae292ccf792284e28b88f63f366748\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.0.1] C:\Users\Carlos\.android\build-cache\bd993d8db911b913e24e7ea13a15415fb0745d2d\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.0.1] C:\Users\Carlos\.android\build-cache\aa088fefccccfe517a63efd8b683f0dd6b1d08ec\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.0.1] C:\Users\Carlos\.android\build-cache\eaf48e9f2632a076b88faa0af176b139e2809025\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.0.1] C:\Users\Carlos\.android\build-cache\51a1b983d7cf9556af3c15f3c126f8d2dcf5ac7b\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.0.1] C:\Users\Carlos\.android\build-cache\2f2aaa407d109f0fd155b0d9f65aec28cdde42e0\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Carlos\.android\build-cache\8b1cc6567c7c000b6c60e7698d025fe56380bb39\output\AndroidManifest.xml:2:3-70
 	android:targetSdkVersion
 		ADDED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:11:9-38
 		INJECTED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml
@@ -48,11 +48,11 @@ MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Carlos\Documents\Rep
 		INJECTED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml
 application
 ADDED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:13:5-30:19
-MERGED from [com.facebook.react:react-native:0.43.2] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.43.2\AndroidManifest.xml:13:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\AndroidManifest.xml:3:3-17
-MERGED from [org.webkit:android-jsc:r174650] C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\org.webkit\android-jsc\r174650\AndroidManifest.xml:2:3-17
+MERGED from [com.facebook.react:react-native:0.43.2] C:\Users\Carlos\.android\build-cache\a810159702cb7696833560ab682c3a0d1badfaf8\output\AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Carlos\.android\build-cache\3bd43a1b3222d1f7ab05d6c8204b1cb635bd32ac\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Carlos\.android\build-cache\9495ffd20ddb5b7812e2b0184ecc85089874c727\output\AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Carlos\.android\build-cache\8b1cc6567c7c000b6c60e7698d025fe56380bb39\output\AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\Carlos\.android\build-cache\3bcb7c07e57455569c30de1897e1b77e39075165\output\AndroidManifest.xml:2:3-17
 	android:label
 		ADDED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:16:7-39
 	android:allowBackup
@@ -87,9 +87,9 @@ activity#com.facebook.react.devsupport.DevSettingsActivity
 ADDED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:29:7-84
 	android:name
 		ADDED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:29:17-81
-android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 IMPLIED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_PHONE_STATE
+uses-permission#android.permission.READ_PHONE_STATE
 IMPLIED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
 IMPLIED from C:\Users\Carlos\Documents\Repositories\crna-test\android\app\src\main\AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
