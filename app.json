@@ -1,7 +1,4 @@
 {
-  "expo": {
-    "sdkVersion": "15.0.0"
-  },
-  "name": "crnatest",
-  "displayName": "Dont know"
+  "name": "test1",
+  "displayName": "test1"
 }

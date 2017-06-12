@@ -1,3 +1,4 @@
 import { AppRegistry } from 'react-native'
-import App             from './components'
-AppRegistry.registerComponent('crnatest', () => App)
+import App             from './src'
+
+AppRegistry.registerComponent('test1', () => App)

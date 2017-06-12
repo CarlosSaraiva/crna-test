@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Users\\Carlos\\Documents\\Repositories\\crna-test\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
         "source": "C:\\Users\\Carlos\\Documents\\Repositories\\crna-test\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Carlos\\Documents\\Repositories\\test1\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Carlos\\Documents\\Repositories\\test1\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
 ]

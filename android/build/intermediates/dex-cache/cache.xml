@@ -3,12 +3,21 @@
 
     <item
         is-multidex="false"
+        jar="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.0.1_b3043ccdaeea3d0d9ba93c7ae0f4c816bcc24e42.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Carlos\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-ws\3.4.1\8ace66ef7002d98f633377c9e67daeeb196d8c3b\okhttp-ws-3.4.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\okhttp-ws-3.4.1_6174d2e68440734243ccf2ee0217fa98f5ce0f63.jar" />
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\okhttp-ws-3.4.1_6174d2e68440734243ccf2ee0217fa98f5ce0f63.jar" />
     </item>
     <item
         is-multidex="false"
@@ -21,12 +30,39 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.0.1_481149d71f63288568d210d0c4b100736da0a0c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Carlos\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.4.1\63994437f62bc861bc20c605d12962f7246116d1\okhttp-urlconnection-3.4.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="63994437f62bc861bc20c605d12962f7246116d1">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.4.1_aab2351b6103a9602016908f620635f62f4200d6.jar" />
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.4.1_aab2351b6103a9602016908f620635f62f4200d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1_b50627dacb68f0cd80536166472ce0d49ab2b1ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Carlos\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1_1898839b83cbd972a5e05c4878348d802b3936be.jar" />
     </item>
     <item
         is-multidex="false"
@@ -39,12 +75,57 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_03c9549fda2beb81a4e491d73be3ab7cd5a4b65b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.0.1_0a27fc49f18d812eae142e0e439f8203c655d4f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
         <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.0.1_af1f1651d77a1e2fa4b13f646bafa465419e17cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.45.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0d3e48e200296061415952a358fad487e129adaa">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.45.1_a5f87b2f72f45c65327a84dc64a90523fb29d1d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.0.1_58f78e731308042b8f14de0e970bcff1315aa0e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.0.1_b0e8cf78c95ebe8c161483fa4430cec9a13ae630.jar" />
     </item>
     <item
         is-multidex="false"
@@ -57,12 +138,48 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.1_a392aceaa83804af71181bc23d8c59a137e37590.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.45.1\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_f8f5dad49b555db4b8fcfde5a58ec490924374ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1_8774fa5d4fc1081b340410babb7c968cc4c6b7b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
         <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_24adfadda0aee6cc56017a53562b15584dc1d2d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_5a86715fad31cab1d0682a4b7cad647c6de783b2.jar" />
     </item>
     <item
         is-multidex="false"
@@ -75,21 +192,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Carlos\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_5aeffb385040db5cf557fb77ed0bf539eeaa4cf1.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Carlos\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_f5b19104c127af9871f377c4606c6ccaf3321513.jar" />
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_f5b19104c127af9871f377c4606c6ccaf3321513.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Carlos\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_5aeffb385040db5cf557fb77ed0bf539eeaa4cf1.jar" />
     </item>
     <item
         is-multidex="false"
@@ -98,7 +215,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\okio-1.9.0_8240cc27af28d125454c86f1e650c8bb25c82ee9.jar" />
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\okio-1.9.0_8240cc27af28d125454c86f1e650c8bb25c82ee9.jar" />
     </item>
     <item
         is-multidex="false"
@@ -111,21 +228,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jar="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.45.1\jars\libs\infer-annotations-4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_d6e6d90384a125183cb4d303dd80eabf47b62293.jar" />
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_54be8aa2f135c49f1be21d41fb61fe886ac57d4d.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.43.2\jars\classes.jar"
+        jar="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="dd7e9e4044d541b253c526294b9f4985029d846c">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.43.2_fe3791e02fc9f497c9cbe995c763f9932455b352.jar" />
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.0.1_0b3bf30bf7432bca3bb528d8abb9c3f460cda222.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.45.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0d3e48e200296061415952a358fad487e129adaa">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.45.1_0d28d7346e622167e3fd0abbb09c5c85dd556e0f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -134,7 +260,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\okhttp-3.4.1_eefd5cb7e41c3a69e02a5072ab6ca8cee64292d2.jar" />
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\okhttp-3.4.1_eefd5cb7e41c3a69e02a5072ab6ca8cee64292d2.jar" />
     </item>
     <item
         is-multidex="false"
@@ -143,16 +269,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_6bb6327b1e78c40fe3a9314dc695178642bbf580.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Carlos\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_85d2038551a407dc2df5344a46a7f18c0b5fb714.jar" />
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_6bb6327b1e78c40fe3a9314dc695178642bbf580.jar" />
     </item>
     <item
         is-multidex="false"
@@ -161,34 +278,25 @@
         optimize="true"
         revision="23.0.1"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_746b9fc4279c056f003ca2677c50b1acff17e597.jar" />
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_746b9fc4279c056f003ca2677c50b1acff17e597.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jar="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_b49decde203696452bd0bc6a929658e06475bbec.jar" />
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.1_11c043b256d2fa55eed5e278790fe25eb99bbfdf.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.43.2\jars\libs\infer-annotations-1.5.jar"
+        jar="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\infer-annotations-1.5_81b75cd68f8022dd094920f1ada5c182707e6f78.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="C:\Users\Carlos\Documents\Repositories\crna-test\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_19818a31ac0d27f672392731a438c0eeef8c910e.jar" />
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="C:\Users\Carlos\Documents\Repositories\test1\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_71cc9fa9fe02e97a29cc6f22a666862b3e4882c8.jar" />
     </item>
     <item
         is-multidex="false"

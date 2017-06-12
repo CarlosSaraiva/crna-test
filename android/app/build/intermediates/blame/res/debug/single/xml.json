@@ -1,6 +1,10 @@
 [
     {
         "merged": "C:\\Users\\Carlos\\Documents\\Repositories\\crna-test\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
-        "source": "C:\\Users\\Carlos\\.android\\build-cache\\a810159702cb7696833560ab682c3a0d1badfaf8\\output\\res\\xml\\preferences.xml"
+        "source": "C:\\Users\\Carlos\\Documents\\Repositories\\crna-test\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.45.1\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "C:\\Users\\Carlos\\Documents\\Repositories\\test1\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "C:\\Users\\Carlos\\Documents\\Repositories\\test1\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.45.1\\res\\xml\\preferences.xml"
     }
 ]
